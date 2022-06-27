@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+.details{
+    width: 557px;
+    margin: 43px auto 0 auto;
+    font: normal normal bold 24px;
+}
+
+.details h1{
+    font-family: 'Roboto', sans-serif;
+    color: #555555;
+    font-weight: bold;
+}
+
+.container h3{
+    width: 557px;
+    font-family: 'Roboto', sans-serif;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 300 ;
+    margin: 15px auto 0 auto;
+}
+
+
+/* switch */
+.switchCon{
+    width: 557px;
+    margin: 15px auto 10px auto;
+}
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 31px
+   }
+   
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+   }
+   
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #EFEFEF;
+    transition: .4s;
+    border-radius: 30px;
+   }
+   
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 31px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: white;
+    transition: .4s;
+   }
+   
+input:checked + .slider {
+    background-color: #74DD88;
+   }
+   
+input:focus + .slider {
+    box-shadow: 0 0 1px #74DD88;
+   }
+   
+input:checked + .slider:before {
+    transform: translateX(1.8em);
+   }
+
+
+/* chatbox */
+
+.conversation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:475px;
+    }
+
+.chatArea{
+    position: absolute;
+    width: 557px;
+    height: 936px;
+    border: 1px solid #70707033;
+    background-color: #0000000F;
+    border-radius: 18px;
+    overflow: hidden;
+    
+}
+
+.messageArea{
+    position: absolute;
+    top: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 548px;
+    height: 84px;
+    
+}
+
+.messageArea .textbox {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.messageArea .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    margin-left: 10px;
+    background-color: #3491CE;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.messageArea .btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    margin-left: 10px;
+    background-color: #74DD88;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.messages{
+    width: 80%;
+    height: 88%;
+    margin: 10px auto 0 auto;
+    text-decoration: none;
+    word-wrap: break-word;
+    list-style-type: none;
+    overflow-y: auto;
+}
+
+.messages::-webkit-scrollbar{
+    display: none;
+}
+
+.textbox{
+    width: 466px;
+    height: 55px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 99px #0000002E;
+    border-radius: 16px;
+    opacity: 1;
+    border: none;
+    word-wrap: break-word;
+}
+
+/* conversation nr1 */
+.concon{
+    width: 300px;
+    height: 100%;
+}
+
+.mainInnerHtml{
+    position: relative;
+    left: 50%;
+    width: 100%;
+    padding-top: 5px;
+    min-height: 5%;
+}
+
+.innerHtmlOne{
+    position: relative;
+    left: 0;
+    display: flex;
+    width: 80%;
+    min-height: 5%;
+    background-color: #4D98D9;
+    border-radius: 20px;
+    word-wrap: break-word;
+    padding: 0 10px 10px 10px;
+}
+
+.innerHtmlOne img{
+    position: relative;
+    left: 110%;
+    margin: 5px 5px 0 -5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.innerDetails h6 {
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.innerDetails span {
+    color:white;
+    font-size:20px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.innerDetails{
+    position: relative;
+    right: 50px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #4D98D9;
+    
+    
+}
+
+/* resert button property */
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+/* conversation nr2 */
+.invication{
+    font-size: 20px;
+}
+
+.conconTwo{
+    width: 300px;
+    height: 100%;
+}
+
+.mainInnerHtmlTwo{
+    position: relative;
+    left: 0;
+    width: 100%;
+    padding-top: 5px;
+    min-height: 5%;
+    
+}
+
+.innerHtmlOneTwo{
+    position: relative;
+    left:50px;
+    display: flex;
+    width: 80%;
+    min-height: 5%;
+    background-color: white;
+    border-radius: 20px;
+    word-wrap: break-word;
+    padding: 0 10px 10px 10px;
+}
+
+.innerHtmlOneTwo img{
+    position: relative;
+    left: -50px;
+    margin: 5px 5px 0 -5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 999;
+}
+
+.innerDetailsTwo h6 {
+    font-size: 20px;
+    color: #2C3E50;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.innerDetailsTwo span {
+    color:#2C3E50;
+    font-size:20px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.innerDetailsTwo{
+    position:relative;
+    right: 50px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+
+
+
+
+/* details under chat bubble  */
+.detailsContainerOne{
+    width: 170px;
+    margin-left: 20px;
+}
+
+.detailsContainerTwo{
+    width: 170px;
+    margin-left: 70px;
+}
+
+.detailsContainerOne .time{
+    border-right: 2px solid #00000043;
+    margin-right: 5px;
+    padding-right: 5px;
+    color: #00000043;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    
+}
+
+.detailsContainerOne .edit{
+    border-right: 2px solid #00000043;
+    margin-right: 5px;
+    padding-right: 5px;
+    color: #00000043;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    
+}
+
+.detailsContainerOne .delete{
+    border-right: 2px solid #00000043;
+    margin-right: 5px;
+    padding-right: 5px;
+    color: #00000043;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.detailsContainerTwo .timeTwo{
+    border-right: 2px solid #00000043;
+    padding-right: 5px;
+    color: #00000043;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.detailsContainerTwo .editTwo{
+    border-right: 2px solid #00000043;
+    margin-right: 5px;
+    padding-right: 5px;
+    color: #00000043;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+.detailsContainerTwo .deleteTwo{
+    border-right: 2px solid #00000043;
+    margin-right: 5px;
+    padding-right: 5px;
+    color: #00000043;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
